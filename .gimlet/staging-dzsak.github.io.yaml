@@ -1,0 +1,13 @@
+app: dzsak.github.io
+env: staging
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.38.0
+values:
+  gitRepository: dzsak/dzsak.github.io
+  gitSha: '{{ .GITHUB_SHA }}'
+strategicMergePatches: ""
+json6902Patches: []
+manifests: ""
